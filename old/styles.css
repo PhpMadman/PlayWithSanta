@@ -1,0 +1,38 @@
+/* CSS for PWS */
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+.col_left,.col_right {
+  float: left;
+  width: 50%;
+}
+
+.clear {
+  clear: both;
+}
+
+.game_box {
+    height: 50%;
+}
+
+.note {
+    font-size: 0.5em;
+}

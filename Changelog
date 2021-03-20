@@ -1,0 +1,38 @@
+Php - PWS 2.0
+
+
+
+** 2.1.0
+* Changed Changelog structure
+* Added classes and autoloaded
+* Removed all previous work
+* Moved db info to a config file
+
+---- Changelog strutcture change ----
+
+V: 2.0.5
+* Code improvments
++ Total score
++ Scoreboard
+
+V: 2.0.4
++ Sign-up / Sign-in functions
++ Sign-out button
+
+V: 2.0.3
++ Some css to create layout
++ Areas for score and user
+
+V: 2.0.2 Beta
+- removed javascript
+- ignored guideliens
++ added throw santa function
++ rewrote html
++ splitt ThrowSanta in to some smaller functions
++ Added messages to mysql
+
+V: 2.0.1 Alpha
++ Basic html
++ javascript throw
++ guidelines
+
