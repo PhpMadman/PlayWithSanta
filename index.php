@@ -10,6 +10,6 @@ require_once 'autoloader.php';
 
 $db = Db::DbLink();
 
-echo DB_URL;
+require_once 'templates/main.php';
 
 ?>

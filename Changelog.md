@@ -1,14 +1,17 @@
 Php - PWS 2.0
 
-
-
-** 2.1.0
+## 2.1.0
 * Changed Changelog structure
-* Added classes and autoloaded
 * Removed all previous work
+* Fixed a git repo
+* Added classes and autoloaded
 * Moved db info to a config file
+* Added Bootstrap
+* Added templates
 
----- Changelog strutcture change ----
+##
+Changelog strutcture change
+##
 
 V: 2.0.5
 * Code improvments
@@ -35,4 +38,3 @@ V: 2.0.1 Alpha
 + Basic html
 + javascript throw
 + guidelines
-
