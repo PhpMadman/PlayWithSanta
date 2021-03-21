@@ -8,7 +8,7 @@ require_once 'conf/config.php';
 require_once 'autoloader.php';
 // require_once 'db.php';
 
-$db = Db::DbLink();
+//$db = Db::DbLink();
 
 require_once 'templates/main.php';
 
