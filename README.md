@@ -2,7 +2,7 @@
 
 PWS is an old Lua Script from a DC hub.
 
-This is my attempt to re-write it to php
+This is my 2nd attempt to re-write it to php
 
 ### The Lua:
 * A score table.
@@ -42,9 +42,10 @@ This is my attempt to re-write it to php
 	* post / cookie code for login
 * Regiser Page
 	* post / cookie for register
-* User class ?
+* User class
 * Score class ?
 * Where should we handle add post processes.
 	* Sign in / up uses User class ?
 	* The game uses a game class, with a score sub class ?
 * Game should still support guest playing, but no score saveing for them
+* Make it secure, sanetize input and so on

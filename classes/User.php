@@ -36,8 +36,7 @@ class User {
 	}
 
 	public function userExists( $username, $password = null ) {
-		echo $username;
-		$stmnt = $this->db->prepare( 'SELECT id FROM Players WHERE username = ?' );
+		$stmnt = $this->db->prepare( 'SELECT id, password FROM Players WHERE username = ?' );
 		$stmnt->bind_param('s', $username);
 		$stmnt->execute();
 		$stmnt->store_result();

@@ -23,12 +23,18 @@
 								<li class="nav-item">
 									<a href="?p=about" class="nav-link">About</a>
 								</li>
+								<?php
+								if ( ! isset( $_SESSION['LoggedIn'] ) ) {
+								?>
 								<li class="nav-item">
 									<a href="?p=sign-in" class="nav-link">Sign in</a>
 								</li>
 								<li class="nav-item">
 									<a href="?p=sign-up" class="nav-link">Sign up</a>
 								</li>
+								<?php
+								}
+								?>
 					</ul>
 				</div>
 			</nav>

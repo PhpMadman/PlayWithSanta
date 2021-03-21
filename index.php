@@ -6,10 +6,10 @@ error_reporting(E_ALL);
 
 require_once 'conf/config.php';
 require_once 'autoloader.php';
-// require_once 'db.php';
 
-//$db = Db::DbLink();
+session_start(); // Start session so we can handle logged in users
 
+// Render all diffrent templates
 require_once 'templates/main.php';
 
 ?>
