@@ -33,6 +33,13 @@
 									<a href="?p=sign-up" class="nav-link">Sign up</a>
 								</li>
 								<?php
+								} else {
+									// Fix style. Dark should always be visable, and red on hoover. Or otherway around 
+									?>
+									<form class="form-inline my-2 my-lg-0">
+										<button class="btn btn-dark" type="submit">Log Out</button>
+									</form>
+									<?php
 								}
 								?>
 					</ul>
