@@ -5,10 +5,12 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+		<link href="assets/styles.css" rel="stylesheet">
 		<title>PWS 2.1</title>
 	</head>
 	<body>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">Play With Santa</a>
 			<ul class="navbar-nav">
 				<li class="nav-item">
 					<a href="?p=home" class="nav-link">Start</a>
@@ -16,11 +18,15 @@
 				<li class="nav-item">
 					<a href="?p=about" class="nav-link">About</a>
 				</li>
-				<li class="nav-item">Login</li>
-				<li class="nav-item">Register</li>
+				<li class="nav-item">
+					<a href="?p=sign-in" class="nav-link">Sign in</a>
+				</li>
+				<li class="nav-item">
+					<a href="?p=sign-up" class="nav-link">Sign up</a>
+				</li>
 			</ul>
 		</nav>
-		<main role="main" class="container-fluid">
+		<main role="main" class="container-fluid fill">
 			<div class="content">
 				<?php
 					if ( isset( $_GET['p'] ) ) {

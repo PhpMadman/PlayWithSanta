@@ -35,14 +35,16 @@ This is my attempt to re-write it to php
 
 ### TODO's
 * Move Navbar to its own template
-* Create Login & register pages
-* Fill in info on about page
 * The game should be on the start page
 	* But still in own partial template
 * Add page & nav to display top scores
 * Login Page
-	* Write basic html
-	* post / session code for login
+	* post / cookie code for login
 * Regiser Page
-	* Write basic html
-	
+	* post / cookie for register
+* User class ?
+* Score class ?
+* Where should we handle add post processes.
+	* Sign in / up uses User class ?
+	* The game uses a game class, with a score sub class ?
+* Game should still support guest playing, but no score saveing for them

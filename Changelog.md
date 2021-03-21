@@ -1,4 +1,9 @@
-Php - PWS 2.0
+Php - PWS v2
+
+## 2.1.1
+* Added sign-in / sign-up templates
+* Added Basic About text
+* Added custom stylesheet
 
 ## 2.1.0
 * Changed Changelog structure
