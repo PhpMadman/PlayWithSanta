@@ -34,12 +34,9 @@ This is my 2nd attempt to re-write it to php
   *  Random NPC to acidently kill or get killed by.
 
 ### TODO's
-* Move Navbar to its own template
 * The game should be on the start page
 	* But still in own partial template
 * Add page & nav to display top scores
-* Login Page
-	* post / cookie code for login
 * Regiser Page
 	* post / cookie for register
 * User class
@@ -49,3 +46,14 @@ This is my 2nd attempt to re-write it to php
 	* The game uses a game class, with a score sub class ?
 * Game should still support guest playing, but no score saveing for them
 * Make it secure, sanetize input and so on
+* Add 404 page for ?p
+* Should cookie use a username hash instead?
+* Move the sql part from User to DB
+* Re-write Mysql DB, I don't like it.
+  * tabels should be lowercase
+  * password is a keyword and should be changed to something else
+* Navbar
+  * Move to it's own template
+  * Display user score
+  * Right align logout button
+* Try to make a cool logo

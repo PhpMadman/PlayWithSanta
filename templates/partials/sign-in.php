@@ -7,12 +7,11 @@ if ( isset( $_POST['username'] ) && isset( $_POST['password'] ) ) {
 		$_SESSION['username'] = $_POST['username'];
 		$_SESSION['id'] = $user_id;
 		$arrCookie = array (
-				'expires' => strtotime( '+4 hours' ),
-				'path' => '/',
-				'secure' => true,
-				'samesite' => 'None',
+			'expires' => strtotime( '+4 hours' ),
+			'path' => '/',
+			'secure' => true,
+			'samesite' => 'None',
 		);
-		// TODO hash and store username in cookie?
 		setcookie("pws", $_POST['username'], $arrCookie);
 	} else {
 		$signin_failed = true;

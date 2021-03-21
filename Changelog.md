@@ -4,6 +4,8 @@ Php - PWS v2
 * Added sign-in / sign-up templates
 * Added Basic About text
 * Added custom stylesheet
+* Added sign in function
+* Added Db & User classes
 
 ## 2.1.0
 * Changed Changelog structure
@@ -15,7 +17,7 @@ Php - PWS v2
 * Added templates
 
 ##
-Changelog strutcture change
+Changelog structure change
 ##
 
 V: 2.0.5
