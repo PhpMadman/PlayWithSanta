@@ -31,4 +31,17 @@ class User {
 
 	public function addUser( $username, $password ) {
 	}
+
+	public function loginUser ( $user_id ) {
+		$_SESSION['LoggedIn'] = true;
+		$_SESSION['id'] = $user_id;
+		$arrCookie = array (
+			'expires' => strtotime( '+4 hours' ),
+			'path' => '/',
+			'secure' => true,
+			'samesite' => 'None',
+		);
+		setcookie("pws", $user_id, $arrCookie);
+		return true;
+	}
 }

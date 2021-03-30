@@ -47,13 +47,12 @@ This is my 2nd attempt to re-write it to php
 * Game should still support guest playing, but no score saveing for them
 * Make it secure, sanetize input and so on
 * Add 404 page for ?p
-* Should cookie use a username hash instead?
 * Move the sql part from User to DB
 * Re-write Mysql DB, I don't like it.
   * tabels should be lowercase
   * password is a keyword and should be changed to something else
 * Navbar
-  * Move to it's own template
   * Display user score
   * Right align logout button
 * Try to make a cool logo
+* Bug: Navbar don't update on user sign in

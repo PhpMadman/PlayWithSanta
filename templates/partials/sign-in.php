@@ -1,24 +1,16 @@
 <?php
+// TODO This needs to move. User is proccesed after navbar, and therefor navbar don't update
 if ( isset( $_POST['username'] ) && isset( $_POST['password'] ) ) {
 	$user = new User();
 	$user_id = $user->userExists( $_POST['username'], $_POST['password'] );
 	if (isset($user_id) && $user_id > 0) {
-		$_SESSION['LoggedIn'] = true;
-		$_SESSION['username'] = $_POST['username'];
-		$_SESSION['id'] = $user_id;
-		$arrCookie = array (
-			'expires' => strtotime( '+4 hours' ),
-			'path' => '/',
-			'secure' => true,
-			'samesite' => 'None',
-		);
-		setcookie("pws", $_POST['username'], $arrCookie);
+		$logged_in = $user->loginUser( $user_id );
 	} else {
 		$signin_failed = true;
 	}
 }
 
-if ( isset( $_SESSION['LoggedIn'] ) && $_SESSION['LoggedIn'] ) {
+if ( isset( $logged_in ) && $logged_in ) {
 	?>
 	<div class="alert alert-success" role="alert">
 		You are signed in.
@@ -38,10 +30,10 @@ if ( isset( $_SESSION['LoggedIn'] ) && $_SESSION['LoggedIn'] ) {
 		</form>
 	</div>
 	<?php
-	if ( isset( $signin_failed ) && $signin_failed) {
+	if ( isset( $signin_failed ) && $signin_failed ) {
 	?>
 	<div class="alert alert-danger" role="alert">
-		A simple danger alert—check it out!
+		Sign in failed
 	</div>
 	<?php
 	}
