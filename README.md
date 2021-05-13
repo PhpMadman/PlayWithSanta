@@ -40,20 +40,25 @@ This is my 2nd attempt to re-write it to php
 * Regiser Page
 	* post / cookie for register
 * User class
+  * Write function to add user to DB
 * Score class ?
 * Where should we handle add post processes.
 	* Sign in / up uses User class ?
 	* The game uses a game class, with a score sub class ?
 * Game should still support guest playing, but no score saveing for them
+  * Guest name should be random, and slightly offencive
 * Make it secure, sanetize input and so on
-* Add 404 page for ?p
-* Move the sql part from User to DB
 * Re-write Mysql DB, I don't like it.
   * tabels should be lowercase
   * password is a keyword and should be changed to something else
+    * Players -> pws_players
+    * HitMsg -> pws_msg_hit ?
+    * MissMsg -> pws_msg_miss
+    * HitVicMsg -> pws_msg_hit_vic
+      * HitVicMsg could be merged with HitMsg ?
+   * I want to keep curuser / vicuser as homeage to Lua
 * Navbar
   * Display user score
   * Right align logout button
 * Try to make a cool logo
 * Bug: Navbar don't update on user sign in
-* Bugs: PSR is not working

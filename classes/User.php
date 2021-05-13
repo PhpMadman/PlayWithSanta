@@ -6,7 +6,7 @@ class User {
 
 	public function __construct() {
 		if ( $this->db === null ) {
-			$db = Db::DbLink();
+			$db = Db::dbLink();
 			$this->db = $db;
 		}
 	}
@@ -31,6 +31,7 @@ class User {
 	}
 
 	public function addUser( $username, $password ) {
+		// We should probarly do something cool here
 	}
 
 	public function loginUser( $user_id ) {

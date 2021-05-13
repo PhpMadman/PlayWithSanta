@@ -26,7 +26,11 @@
 			<div class="content">
 				<?php
 				if ( isset( $_GET['p'] ) ) {
-					require_once 'partials/' . $_GET['p'] . '.php';
+					if ( file_exists( 'partials/' . $_GET['p'] . '.php') ) {
+						require_once 'partials/' . $_GET['p'] . '.php';
+					} else {
+						require_once 'partials/404.php';
+					}
 				} else {
 					require_once 'partials/home.php';
 				}
@@ -35,7 +39,7 @@
 		</main>
 		<footer class="footer">
 			<div class="container">
-				PloppyLeft - Copy as much as posible - Madman (<?php echo '2006 - ' . date( 'Y' ); ?>)
+				PloppyLeft - Copy as much as posible - Madman (<?php echo '2006 - ' . date( 'Y' ); ?>) - Running PWS v<?php echo PWS_VERSION ?>
 			</div>
 		</footer>
 
