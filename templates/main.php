@@ -15,23 +15,24 @@
 	<body>
 		<header>
 			<?php
+
 				require_once 'partials/navbar.php';
 			?>
 		<header>
 		<main role="main" class="container">
 			<div class="content">
 				<?php
-					if ( isset( $_GET['p'] ) ) {
-						require_once 'partials/' . $_GET['p'] . '.php';
-					} else {
-						require_once 'partials/home.php';
-					}
+				if ( isset( $_GET['p'] ) ) {
+					require_once 'partials/' . $_GET['p'] . '.php';
+				} else {
+					require_once 'partials/home.php';
+				}
 				?>
 			</div>
 		</main>
 		<footer class="footer">
 			<div class="container">
-				PloppyLeft - Copy as much as posible - Madman (<?php echo '2006 - '.date('Y'); ?>)
+				PloppyLeft - Copy as much as posible - Madman (<?php echo '2006 - ' . date( 'Y' ); ?>)
 			</div>
 		</footer>
 
