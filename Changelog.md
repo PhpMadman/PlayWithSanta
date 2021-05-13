@@ -1,4 +1,6 @@
 Php - PWS v2
+## 2.1.2 - WIP
+* Added PSR-12 & PWS coding standard
 
 ## 2.1.1
 * Added sign-in / sign-up templates

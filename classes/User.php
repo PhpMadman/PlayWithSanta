@@ -1,4 +1,5 @@
 <?php
+
 class User {
 
 	public $db = null;
@@ -32,16 +33,16 @@ class User {
 	public function addUser( $username, $password ) {
 	}
 
-	public function loginUser ( $user_id ) {
+	public function loginUser( $user_id ) {
 		$_SESSION['LoggedIn'] = true;
 		$_SESSION['id'] = $user_id;
-		$arrCookie = array (
+		$arrCookie = array(
 			'expires' => strtotime( '+4 hours' ),
 			'path' => '/',
 			'secure' => true,
 			'samesite' => 'None',
 		);
-		setcookie("pws", $user_id, $arrCookie);
+		setcookie( 'pws', $user_id, $arrCookie );
 		return true;
 	}
 }

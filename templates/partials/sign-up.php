@@ -1,8 +1,9 @@
 <?php
+
 if ( isset( $_POST['username'] ) && isset( $_POST['password'] ) ) {
 	$user = new User();
 	$user_id = $user->userExists( $_POST['username'], $_POST['password'] );
-	if (isset($user_id) && $user_id > 0) {
+	if ( isset( $user_id ) && $user_id > 0) {
 		// BLOCK! User exists
 	} else {
 		// User did not exist.

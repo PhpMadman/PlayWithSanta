@@ -56,3 +56,4 @@ This is my 2nd attempt to re-write it to php
   * Right align logout button
 * Try to make a cool logo
 * Bug: Navbar don't update on user sign in
+* Bugs: PSR is not working

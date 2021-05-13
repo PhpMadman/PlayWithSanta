@@ -3,7 +3,7 @@
 if ( isset( $_POST['username'] ) && isset( $_POST['password'] ) ) {
 	$user = new User();
 	$user_id = $user->userExists( $_POST['username'], $_POST['password'] );
-	if (isset($user_id) && $user_id > 0) {
+	if ( isset( $user_id ) && $user_id > 0) {
 		$logged_in = $user->loginUser( $user_id );
 	} else {
 		$signin_failed = true;
@@ -31,10 +31,10 @@ if ( isset( $logged_in ) && $logged_in ) {
 	</div>
 	<?php
 	if ( isset( $signin_failed ) && $signin_failed ) {
-	?>
-	<div class="alert alert-danger" role="alert">
-		Sign in failed
-	</div>
-	<?php
+		?>
+		<div class="alert alert-danger" role="alert">
+			Sign in failed
+		</div>
+		<?php
 	}
 }
